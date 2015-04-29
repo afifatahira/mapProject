@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Google Map App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/mapStyle.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+  </head>
+  
+  <body>
+    <div id= 'canvas'> 
+        
+        <div id='user-selection'>
+            User:<br>
+          <select id='user'>
+            <option value="Tom">Tom</option>
+            <option value="Jane">Jane</option>
+            <option value="Dave">Dave</option>
+            <option value="Sarah">Sarah</option>
+            <option value="John">John</option>
+          </select>
+        </div>
+
+        <div id='place-type-selection'>
+            Type:<br>
+            <select id='place-type'>
+              <option value="School">School</option>
+              <option value="Hospital">Hospital</option>
+              <option value="Restaurant">Restaurant</option>
+              <option value="Bank">Bank</option>
+            </select>
+        </div>
+
+        <div id='voice-div'>
+            <input id='voice-button' type="button" style="background-image: url('images/microphone.png')"/>
+        </div>
+
+        <div id='voice-command'>Click on the microphone to give voice command in the format: 'Find hospitals near Tom.'</div>
+
+        <div id='map-canvas'></div> 
+    
+    </div>
+
+    <script src="javascript/map.js"></script>
+    <script src="javascript/userData.js"></script>
+    <script src="javascript/speech.js"></script>
+    
+  </body>
+</html>
+
